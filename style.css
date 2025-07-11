@@ -17,6 +17,7 @@
     --border: rgba(255, 255, 255, 0.1);
     --transition: all 0.3s ease;
 }
+
 body {
     background-color: var(--darker);
     color: var(--light);
@@ -83,6 +84,7 @@ body {
     margin: 0 auto;
     font-size: 1.1rem;
 }
+
 /* Header Styles */
 header.header {
     background-color: rgba(18, 24, 38, 0.95);
@@ -251,6 +253,7 @@ section.stats {
     color: var(--gray);
     font-size: 0.95rem;
 }
+
 /* Preview Section with Side Image */
 section.preview {
     padding: 6rem 0;
@@ -407,6 +410,7 @@ section.contact {
     padding: 1rem;
     font-size: 1.1rem;
 }
+
 /* Reviews Section */
 section.reviews {
     padding: 6rem 0;
@@ -576,3 +580,4 @@ footer.footer {
     color: var(--gray);
     font-size: 0.9rem;
 }
+
