@@ -83,3 +83,80 @@ body {
     margin: 0 auto;
     font-size: 1.1rem;
 }
+/* Header Styles */
+header.header {
+    background-color: rgba(18, 24, 38, 0.95);
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--light);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.logo i {
+    font-size: 2rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav.nav a {
+    color: var(--light);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    position: relative;
+}
+
+nav.nav a:hover {
+    color: var(--primary);
+}
+
+nav.nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: var(--transition);
+}
+
+nav.nav a:hover::after {
+    width: 100%;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 1rem;
+}
