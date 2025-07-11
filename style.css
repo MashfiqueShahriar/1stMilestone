@@ -160,3 +160,44 @@ nav.nav a:hover::after {
     display: flex;
     gap: 1rem;
 }
+
+/* Hero Banner with Background Image */
+section.hero {
+    padding: 180px 0 100px;
+    position: relative;
+    overflow: hidden;
+    background: 
+        linear-gradient(rgba(13, 17, 28, 0.85), rgba(13, 17, 28, 0.85)),
+        url('images/pic.png') center/cover;
+}
+
+.hero-content {
+    max-width: 650px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.hero h1 span {
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--gray);
+    margin-bottom: 2.5rem;
+    max-width: 550px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
