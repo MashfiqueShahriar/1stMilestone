@@ -201,3 +201,53 @@ section.hero {
     gap: 1.5rem;
     margin-top: 1rem;
 }
+
+/* Stats Section */
+section.stats {
+    padding: 6rem 0;
+    background-color: var(--dark);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 15px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    background: rgba(30, 41, 59, 0.7);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-title {
+    font-size: 1.2rem;
+    color: var(--light);
+    margin-bottom: 0.5rem;
+}
+
+.stat-desc {
+    color: var(--gray);
+    font-size: 0.95rem;
+}
